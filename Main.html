@@ -5,7 +5,7 @@
     <title>PSW lab 1</title>
 </head>
 <body>
-    <div id="text">
+    <section id="text">
         <header>
             <h1 id="h1">heading</h1>
         </header>
@@ -19,19 +19,19 @@
             this     is
             pre-formatted
         </pre>
-    </div>
+    </section>
 
     <hr/>
 
-    <div id="images">
+    <section id="images">
         <img src="img1.jpg" alt="something is wrong">
         <img src="img1.jpg" alt="something is wrong here too" style="width:128px;height:128px;">
         <img src="nothing.jpg" alt="error loading image" >
-    </div>
+    </section>
 
     <hr/>
 
-    <div id="lists">
+    <section id="lists">
         <ol>
             <li>First item</li>
             <li>Second item</li>
@@ -45,34 +45,48 @@
             <li>Last item</li>
         </ol>
 
-    </div>
+    </section>
 
     <hr/>
 
-    <div id="links">
-        <a href="https://www.w3schools.com/html/">HTML tutorial</a>
-        <br/>
-        <a href="ftp://ftp.funet.fi/pub/standards/RFC/rfc959.txt">File Transfer Protocol specification</a>
-        <br/>
-        <a href="#text">Jump to "text" section</a>
-        <br/>
-        <a href="SecondaryPage.html">Second page</a>
-        <br/>
-        <a href="mailto:pawel@gmail.com">Contact us</a>
-        <br/>
-        <a href="img1.jpg" download="image">Download the image from above</a>
-        <br/>
-        <a href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png" download="image">Download the image from below</a>
-        <br/>
-        <a href="https://google.com">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png" alt="google link" width="80" height="60">
-        </a>
-        <br/>
-    </div>
+    <section id="links">
+        <nav>
+            <a href="https://www.w3schools.com/html/">HTML tutorial</a>
+            <br/>
+            <a href="ftp://ftp.funet.fi/pub/standards/RFC/rfc959.txt">File Transfer Protocol specification</a>
+            <br/>
+            <a href="#text">Jump to "text" section</a>
+            <br/>
+            <a href="mailto:pawel@gmail.com">Contact us</a>
+            <br/>
+            <a href="img1.jpg" download="image">Download the image from above</a>
+            <br/>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png" download="image">Download the image from below</a>
+            <br/>
+            <a href="https://google.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png" alt="google link" width="80" height="60">
+            </a>
+            <br/>
+            <section id="sitemap">
+                <nav>
+                    <ul>
+                        <li><a href="Main.html">Main page</a></li>
+                        <ul>
+                            <li><a href="SecondaryPage.html">Second page</a></li>
+                            <li><a href="PersonalForm.html">Personal Form</a></li>
+                            <li><a href="PersonDetails.html">Person Details</a></li>
+                            <li><a href="UserStatistics.html">User Statistics</a></li>
+                        </ul>
+                    </ul>
+                </nav>
+            </section>
+        </nav>
+
+    </section>
 
     <hr/>
 
-    <div id="tables">
+    <section id="tables">
         <table id="table1" border="2">
             <caption>Our Team</caption>
             <tr>
@@ -109,6 +123,34 @@
                 <td>Fułek</td>
             </tr>
         </table>
-    </div>
+    </section>
+    
+    <hr/>
+
+    <section id="article">
+        <article>
+            <header>
+                <h5>From
+                    <em>
+                        <a href="https://pl.wikipedia.org/wiki/Favicon">
+                            Favicon at Wikipedia:
+                        </a>
+                    </em>
+                </h5>
+            </header>
+            <p>Favicon: 
+                (ang. favorites icon: ikona ulubionych) – ikona, która pojawia się przed adresem w polu adresowym przeglądarki internetowej lub na karcie z otwartą stroną www. Ikona ta ma postać obrazka 16x16 lub 32x32 pikseli. Przeglądarki wyświetlają ikonę favicon:
+                <ul>
+                    <li>
+                        zdefiniowaną w kodzie HTML znacznikiem „link”
+                    </li>
+                    <li>
+                        umieszczoną w głównym katalogu, w którym znajduje się strona internetowa, bez potrzeby definiowania adresu favicon w kodzie strony
+                    </li>
+                </ul>
+                Obie metody (czyli definiowanie adresu favicon w kodzie oraz umieszczanie pliku favicon.ico w katalogu głównym) mogą być stosowane równocześnie. 
+            </p>
+        </article>
+    </section>
 </body>
 </html>

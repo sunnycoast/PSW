@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Form</title>
+</head>
+<body>
+
+    <form id="form1" method="post" autocomplete="on">
+        <p><label>Imię: <input type="text" name="name" placeholder="Wprowadź Imię" maxlength="20" value="" autofocus="" /> (tekst do 20 znaków)</label></p>
+        <p><label>Nazwisko: <input type="text" name="surname" placeholder="Wprowadź Nazwisko" maxlength="40" value=""  required=""/> (tekst do 40 znaków)</label></p>
+        <p><label>Miesiąc urodzin: <input type = "text" name = "BirthMonth"
+            placeholder = "Wybierz Miesiąc" list = "miesiące" />
+            <datalist id = "miesiące">
+                <option value = "Styczeń">
+                <option value = "Luty">
+                <option value = "Marzec">
+                <option value = "Kwiecień">
+                <option value = "Maj">
+                <option value = "Czerwiec">
+                <option value = "Lipiec">
+                <option value = "Sierpień">
+                <option value = "Wrzesień">
+                <option value = "Październik">
+                <option value = "Listopad">
+                <option value = "Grudzień">
+            </datalist>
+        </label></p>
+
+        <p><label>Email: <input type = "email" name = "email" placeholder = "user@domena.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required=""/> (user@domena.com) </label></p>
+
+        <p><label>Telefon: <input type = "tel" name = "phone" pattern="\d{9}" placeholder = "phone number" /> (546879213) </label></p>
+
+        <br/>
+        <input type="submit" value="submit"/>
+        <br/>
+        <input type="reset">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Details</title>
+</head>
+<body>
+
+	<form id="form1" method="post" autocomplete="on">
+        <p><label>Zainteresowania: <input type="text" name="interests" placeholder="Zainteresowania" maxlength="100" value="" autofocus="" /> (tekst do 100 znaków)</label></p>
+
+        <p> <label>Kolor włosów: <input type = "color" name="color" placeholder="Kolor" pattern="\#[A-F0-9.-]{6,6}$" />(Kod szesnastkowy, np: #FA02A9)</label> </p>
+
+        <p> <label>Miesiąc urodzenia: <input type = "month" name="month" placeholder="Miesiąc" pattern=".{7,7}$" /> (yyyy-mm) </label> </p>
+
+        <p> <label>Ilość pieniędzy, jakie jesteś skłonny/a wydać na masło miesięcznie: 0$ <input type = "range" min = "0" max = "100" value = "10" name="range" placeholder="7" /> 100$ </label> </p>
+
+        <p> <label>Wyszukiwanie ulubionego sera: <input type = "search" name="search" placeholder = "search query" list = "sery"/>( cheddar )
+        	<datalist id = "sery">
+                <option value = "Red Leicester">
+                <option value = "Leicester">
+                <option value = "Tilsit">
+                <option value = "Caerphilly">
+                <option value = "Bel Paese">
+                <option value = "Red Windsor">
+                <option value = "Stilton">
+                <option value = "Gruyere">
+                <option value = "Emmental">
+                <option value = "Norwegian Jarlsberger">
+                <option value = "Liptauer">
+                <option value = "Lancashire">
+                <option value = "White Stilton">
+                <option value = "Danish Blue">
+                <option value = "Double Gloucester">
+                <option value = "Cheshire">
+                <option value = "Dorset Blue Vinney">
+                <option value = "Brie">
+                <option value = "Roquefort">
+                <option value = "Pont-l'Eveque">
+                <option value = "Port Salut">
+                <option value = "Savoyard">
+                <option value = "Saint-Paulin">
+                <option value = "Carre-de-L'Est">
+                <option value = "Boursin">
+                <option value = "Bresse Bleu">
+                <option value = "Perle de Champagne">
+                <option value = "Camembert">
+                <option value = "hither the fromage de la Belle France">
+                <option value = "Gouda">
+                <option value = "Edam">
+                <option value = "Caithness">
+                <option value = "Smoked Austrian">
+                <option value = "Japanese Sage Darby">
+                <option value = "Wensleydale">
+                <option value = "Greek Feta">
+                <option value = "Gorgonzola">
+                <option value = "Parmesan">
+                <option value = "Mozzarella">
+                <option value = "Pippo Creme">
+                <option value = "Danish Fimboe">
+                <option value = "Czech sheep's milk">
+                <option value = "Venezuelan Beaver Cheese">
+                <option value = "Cheddar">
+                <option value = "Illchester">
+                <option value = "Limburger">
+            </datalist>
+        </label> </p>
+
+
+        <p> <label>Link do twojej strony myspace: <input type = "url" name="url" placeholder = "myspace.com/username" /> ( https://myspace.com/username )</label> </p>
+        
+
+        <br/>
+        <input type="submit" value="submit"/>
+        <br/>
+        <input type="reset">
+
+    </form>
+
+</body>
+</html>
